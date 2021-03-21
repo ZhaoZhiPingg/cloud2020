@@ -1,0 +1,17 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: nacos-payment-provider # 微服务名称
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848 # 配置Nacos地址
+
+# 暴露监控端点  ‘*’ 全部打开
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
