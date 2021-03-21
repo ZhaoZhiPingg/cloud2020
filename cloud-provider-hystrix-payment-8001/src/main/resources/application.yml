@@ -1,0 +1,18 @@
+server:
+  port: 8001 # 端口号
+
+spring:
+  application:
+    name: cloud-provider-hystrix-payment  # 项目名
+
+# eureka 配置
+eureka:
+  client:
+    register-with-eureka: true
+    fetchRegistry: true
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka
+#      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
+
+
+
